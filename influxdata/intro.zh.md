@@ -26,42 +26,4 @@ deb {{endpoint}}/debian/ stable main
 
 ### CentOS / RedHat 用户
 
-#### TUNA/BFSU/NJU 等
-
 新建 `/etc/yum.repos.d/influxdata.repo`，内容为
-
-```{ztmpl lang="ini" input="release" path="/etc/yum.repos.d/influxdata.repo"}
-[influxdata]
-name = InfluxData Repository - RHEL $releasever
-baseurl={{endpoint}}/yum/{{release}}
-enabled=1
-gpgcheck=1
-gpgkey=https://repos.influxdata.com/influxdata-archive_compat.key
-```
-
-#### USTC
-
-新建 `/etc/yum.repos.d/influxdata.repo`，内容为
-
-```{ztmpl lang="ini" path="/etc/yum.repos.d/influxdata.repo"}
-[influxdata]
-name = InfluxData Repository - Stable
-baseurl = {{endpoint}}/stable/$basearch/main
-enabled = 1
-gpgcheck = 1
-gpgkey = https://repos.influxdata.com/influxdata-archive_compat.key
-```
-
-#### 共有部分
-
-再执行
-
-```{ztmpl lang="bash"}
-{{sudo}}yum makecache
-```
-
-即可安装相关软件，如：
-
-```{ztmpl lang="bash"}
-{{sudo}}yum install influxdb
-```

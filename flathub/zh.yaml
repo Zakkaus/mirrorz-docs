@@ -2,3 +2,5 @@ _: Flathub
 block:
 - intro
 - usage
+- sync
+- troubleshoot

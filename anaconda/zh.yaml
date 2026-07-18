@@ -3,6 +3,7 @@ block:
 - intro
 - usage
 - customs
+- customs-list
 - miniconda
 input:
   channel:

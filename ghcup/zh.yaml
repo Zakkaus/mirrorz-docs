@@ -1,4 +1,5 @@
 _: GHCup
 block:
 - intro
-- ghcup
+- usage
+- extras

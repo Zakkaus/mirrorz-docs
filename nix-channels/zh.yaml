@@ -1,6 +1,7 @@
 _: Nix Channels
 block:
-- nix-channels
+- binary-cache
+- channel
 input:
   version:
     _: 系统版本

@@ -1,6 +1,8 @@
 _: Influxdata 软件仓库
 block:
-- influxdata
+- intro
+- centos
+- outro
 input:
   release:
     _: 发行版
