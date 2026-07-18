@@ -2,5 +2,7 @@ _: Flathub
 block:
 - intro
 - usage
-- sync
+- sync-header
+- sync-sjtug
+- sync-ustc
 - troubleshoot

@@ -3,7 +3,9 @@ block:
 - intro
 - usage
 - customs
-- customs-list
+- customs-tuna
+- customs-sjtug
+- customs-sustech
 - miniconda
 input:
   channel:
